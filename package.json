@@ -1,0 +1,42 @@
+{
+  "name": "as-sleep",
+  "version": "0.0.1",
+  "description": "Sleep function for AssemblyScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "yarn asbuild:untouched && yarn asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JairusSW/as-sleep.git"
+  },
+  "keywords": [
+    "sleep",
+    "assemblyscript",
+    "atomics",
+    "pause",
+    "wait"
+  ],
+  "author": "Jairus Tanaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JairusSW/as-sleep/issues"
+  },
+  "homepage": "https://github.com/JairusSW/as-sleep#readme",
+  "devDependencies": {
+    "@assemblyscript/loader": "^0.18.32",
+    "as-console": "^5.0.1",
+    "assemblyscript": "^0.18.32",
+    "atomic-sleep": "^1.0.0"
+  },
+  "dependencies": {},
+  "files": [
+    "assembly/",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ]
+}
