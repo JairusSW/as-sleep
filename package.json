@@ -1,8 +1,9 @@
 {
   "name": "as-sleep",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sleep function for AssemblyScript",
-  "main": "index.js",
+  "ascMain": "assembly/index.ts",
+  "types": "assembly/index.ts",
   "scripts": {
     "test": "node tests",
     "asbuild:untouched": "asc assembly/index.ts --target debug",
